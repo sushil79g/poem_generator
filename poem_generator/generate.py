@@ -1,8 +1,8 @@
 from pprint import pprint
 from model import Model
-form pre-process import process
+from pre-process import process
 
-class Generating:
+class Generator:
     def __init__(self,epochs=50, batch_size=64):
         self.epochs = epochs
         self.batch_size = batch_size
@@ -22,7 +22,5 @@ class Generating:
             full_string.append(idx2chr[pred_index])
             string_mapped.append(pred_index)
             string_mapped = string_mapped[1:len(string_mapped)]
-        poem = ""
-        for char in full_string:
-            poem = poem + char
-        return poem
+        
+        return ''.join(full_string)

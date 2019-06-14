@@ -4,7 +4,6 @@ from keras.utils import np_utils
 
 
 def process(filename):
-    # filename = input('Enter name of file')
     assert isinstance(filename, str), 'Filename should be string'
 
     try:
