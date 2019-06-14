@@ -1,0 +1,5 @@
+# poem_generator/pre-process.py: 2
+Keras == 2.1.6
+
+# poem_generator/pre-process.py: 1
+numpy == 1.16.3
